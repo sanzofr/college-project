@@ -12,11 +12,10 @@ class student{
         }
 };
 
-
 int main() {
     student s1;
 
-    s1.name = "Sanzo";
+    s1.name = "Mohammad Talha";
     s1.age = 18;
 
     s1.display();
