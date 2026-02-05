@@ -1,4 +1,4 @@
-// array rotation by n elem to right
+// array rotation by n elem to left
 
 #include <iostream>
 using namespace std;
