@@ -5,7 +5,7 @@ int main() {
     int arr[] = {1,2,3,4,5,6};
 
     for( int x : arr) {
-        cout << x << " ";
+        cout << x << "\t";
     }
 
     return 0;
