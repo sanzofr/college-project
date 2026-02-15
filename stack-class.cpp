@@ -3,10 +3,41 @@
 #include <iostream>
 using namespace std;
 
+class stack {
+    private:
+        int arr[20] = {0};
+        int pointer = 0;
+
+    public:
+        void push(int x) {
+            arr[pointer] = x;
+            pointer++;
+        }
+
+        void pop() {
+            arr[pointer] = 0;
+            pointer--;
+        }
+
+        void showdata() {
+            for (int x : arr) {
+                cout << x << "\t";
+            }
+        }
+};
+
 int main() {
+    stack s1;
 
-
-
+    s1.push(10);
+    s1.push(20);
+    s1.pop();
+    s1.push(10);
+    s1.push(30);
+    s1.push(60);
+    s1.push(80);
+    s1.pop();
+    s1.showdata();
 
     return 0;
 }
