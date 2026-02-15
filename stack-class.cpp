@@ -10,13 +10,23 @@ class stack {
 
     public:
         void push(int x) {
-            arr[pointer] = x;
-            pointer++;
+            if (pointer < 20) {
+                arr[pointer] = x;
+                pointer++;
+            }
+            else {
+                cout << "stack overflow!" << endl;
+            }
         }
 
         void pop() {
-            arr[pointer] = 0;
-            pointer--;
+            if (pointer > 0) {
+                pointer--;
+                arr[pointer] = 0;
+            }
+            else {
+                cout << "Stack underflow!" << endl;
+            }
         }
 
         void showdata() {
