@@ -11,8 +11,7 @@ class stack {
     public:
         void push(int x) {
             if (pointer < 20) {
-                arr[pointer] = x;
-                pointer++;
+                arr[pointer++] = x;
             }
             else {
                 cout << "stack overflow!" << endl;
@@ -21,8 +20,7 @@ class stack {
 
         void pop() {
             if (pointer > 0) {
-                pointer--;
-                arr[pointer] = 0;
+                arr[--pointer] = 0;
             }
             else {
                 cout << "Stack underflow!" << endl;
